@@ -12,4 +12,20 @@ function getRandomArray(array) {
 
 function showMessage() {
   console.log('this works')
+  if (radio1.checked) {
+    randomAffirmation()
+  } else if {
+    randomMantra()
+  }
+  alert('Click a button!')
 }
+
+function randomAffirmation() {
+  var affirmation = Math.floor(Math.random() * array.length)
+}
+
+function randomMantra() {
+  var mantra = Math.floor(Math.random() * array.length)
+}
+
+function randomMessage(affirmation, mantra)

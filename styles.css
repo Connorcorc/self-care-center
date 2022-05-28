@@ -6,3 +6,118 @@ dark-blue - #134d71;
 white - #ffffff;
 black - #000000;
 */
+html {
+  height: 100%;
+}
+body {
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, #134d71, #78a7c6, #f7e4bf);
+  background-repeat: no-repeat;
+
+}
+
+.header {
+  padding-top: 10px;
+  margin:50px;
+  text-align: center;
+}
+
+.inner-header{
+  text-align: center;
+  padding-top: 35px;
+}
+/* .container {
+  position: absolute;
+  margin: 0;
+  width:100%;
+  background: #f4f5f4;
+  min-height: 600px; } */
+
+/* #radio1, #radio2 {
+  padding: 0;
+  border: 0;
+  display: flex;
+  justify-content: space-evenly;
+} */
+
+.radio-stuff {
+   display: flex;
+   justify-content: space-evenly;
+   margin-left: 10;
+   margin-right: 10;
+}
+
+.container{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+.white-box {
+  font-style: italic;
+  border: transparent;
+  border-radius: 10px;
+  color: black;
+  background-color: white;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  width: 45%;
+  text-align: center;
+
+
+}
+
+.white-box2{
+  margin-top: 50px;
+  background-color: white;
+  color: black;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  width: 65%;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+}
+
+button {
+  margin-top: 30px;
+  font-size: 20px;
+  color: white;
+  background-color: #134d71;
+  border: transparent;
+  border-radius: 10px;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.affirmation {
+  text-align: center;
+  font-size: 24px;
+  margin-right: 200px;
+
+}
+
+.mantra {
+  text-align: center;
+  font-size: 24px;
+
+
+}
+
+.meditate {
+  height: 100px;
+  width: 100px;
+}

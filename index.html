@@ -11,10 +11,9 @@
       <div class="container">
         <div class="white-box">
           <form class="radio-stuff">
-            <input type="radio" id='affirmation'>
+            <input name='selection' type="radio" id='affirmation'>
             <label class='affirmation' for="html">affirmation</label>
-            <!-- <label for='radio1'>affirmation</label> -->
-            <input type="radio" id='mantra'>
+            <input name='selection' type="radio" id='mantra'>
             <label class='mantra' for="html">mantra</label>
           </form>
           <button class='receive-message'>Receive Message</button>
@@ -22,11 +21,15 @@
       </div>
       <div class="container">
         <div class='white-box2'>
-          <!-- <p class='text'>Text Here</p> -->
-          <img src="./assets/meditate.svg" class="meditate">
+          <p class="output"></p>
+          <img class="meditate hidden" src="./assets/meditate.svg">
         </div>
+      </div>
+      <div class="container">
+        <button class="delete-button">I don't connect with this message</button>
       </div>
     </section>
     <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="data.js"></script>
   </body>
 </html>

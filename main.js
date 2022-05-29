@@ -8,18 +8,25 @@ var deleteButton = document.querySelector('.delete-button')
 
 button.addEventListener('click', showMessage)
 deleteButton.addEventListener('click', deleteMessage)
-
-deleteButton.style.visibility = 'hidden'
-
+// deleteButton.style.visibility = 'hidden'
+deleteButton.classList.add('hidden')
 
 function showMessage() {
   console.log('this works')
   if (radio1.checked) {
     randomAffirmation()
-    deleteButton.style.visibility = 'visible'
+    deleteButton.classList.remove('hidden')
+    textOutput.classList.remove('hidden')
+    meditate.classList.add('hidden')
+    // deleteButton.style.visibility = 'visible'
+    // textOutput.style.visibility = 'visible'
   } else if (radio2.checked) {
     randomMantra()
-    deleteButton.style.visibility = 'visible'
+    deleteButton.classList.remove('hidden')
+    textOutput.classList.remove('hidden')
+    meditate.classList.add('hidden')
+    // deleteButton.style.visibility = 'visible'
+    // textOutput.style.visibility = 'visible'
   } else {
   alert('Click a button!')
   }
@@ -27,22 +34,26 @@ function showMessage() {
 
 function deleteMessage() {
   console.log('this works')
-  var affirmation = affirmations;
-  var mantra = mantra;
+  for (var i = 0; i < affirmations.length; i++) {
+    console.log(affirmations[i])
+  }
+  textOutput.classList.add('hidden')
+  meditate.classList.remove('hidden')
+  deleteButton.classList.add('hidden')
 
-  showMessage()
-
-  // alert(`We won't show you that message again`)
+  // meditate.style.visibility = 'visible';
+  // textOutput.style.visibility = 'hidden';
+  alert(`Sorry about that. Select a new message!`)
 }
 
 function randomAffirmation() {
   var affirmation = affirmations[Math.floor(Math.random() * affirmations.length)]
   textOutput.innerText = affirmation;
-  meditate.style.visibility = 'hidden';
+  meditate.classList.add('hidden')
 }
 
 function randomMantra() {
   var mantra = mantras[Math.floor(Math.random() * mantras.length)]
   textOutput.innerText = mantra;
-  meditate.style.visibility = 'hidden';
+  meditate.classList.add('hidden')
 }
